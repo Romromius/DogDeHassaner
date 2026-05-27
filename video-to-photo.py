@@ -9,7 +9,7 @@ def avi_to_frames(video_path, target_size=(256, 256)):
         return
 
     video_name = os.path.splitext(os.path.basename(video_path))[0]
-    output_dir = os.path.join(os.path.dirname(video_path), video_name)
+    output_dir = os.path.join(os.path.dirname(video_path), "SOURCE")
     os.makedirs(output_dir, exist_ok=True)
 
     cap = cv2.VideoCapture(video_path)
