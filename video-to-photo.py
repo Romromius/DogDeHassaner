@@ -50,6 +50,11 @@ def avi_to_frames(video_path, target_size=(256, 256)):
 
 
 if __name__ == "__main__":
+    print('ВНИМАНИЕ!!! ВЫ СОБИРАЕТЕСЬ СГЕНЕРИРОВАТЬ manifest.json')
+    print('СТАРЫЙ ФАЙЛ БУДЕТ БЕЗВОЗВРАТНО УНИЧТОЖЕН')
+    print('ЕЩЕ НЕ ПОЗДНО ОДУМАТЬСЯ!!!!!')
+    input("Нажмите Enter чтобы продолжить...")
+
     if len(sys.argv) != 2:
         print("Использование: python script.py путь_к_файлу.avi")
     else:
